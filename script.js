@@ -3,6 +3,7 @@
 
 let btn = document.getElementById("btn");
 btn.addEventListener("click", () => {
-  document.getElementById("heading").innerHTML = "Entered Metaverse";
-  document.getElementById("para").style.display = "none";
+  document.getElementById("para").innerText = "Entered Metaverse";
+  document.getElementById("para").style.fontSize = "3em";
+	 document.getElementById("para").style.fontWeight = "bolder";
 });
