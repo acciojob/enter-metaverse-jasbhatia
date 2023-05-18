@@ -1,9 +1,13 @@
 //your Jlet btn= document.getElement.id;
 //your JS code here. If required.
 
-let btn = document.getElementById("btn");
-btn.addEventListener("click", () => {
-  document.getElementById("para").innerText = "Entered Metaverse";
-  document.getElementById("para").style.fontSize = "3em";
-	 document.getElementById("para").style.fontWeight = "bolder";
+
+let p = document.getElementById('status');
+let btn = document.getElementById('enterBtn');
+
+btn.addEventListener('click', () => {
+	p.innerHTML = "";
+	let h1 = document.createElement('h1');
+	h1.innerHTML = "Entered Metaverse";
+	p.appendChild(h1);
 });
